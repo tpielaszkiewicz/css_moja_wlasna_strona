@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moja własna strona</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <nav id="menu">
+        <!-- menu (element anwigacyjny) powinno byc wylistowane-->
+        <ul>
+            <!-- poczatek listy-->
+            <li class="menu-item"><a href="#">Home</a></li>
+            <!-- punkty ktore trzymaja linki (nienumerowane) -->
+            <li class="menu-item"><a href="#about">O mnie</a></li>
+            <li class="menu-item"><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+        <img src="img/header-background.jpg" alt="Zdjęcie nagłówkowe">
+        <h1 id="main-header-text">Moja własna strona</h1>  <!-- nagłówek pierwszego pizomu (mamy 6 poziomów)!!!!-->
+    </header>
+
+    <section id="about">
+        <h2 id="about-header">O mnie</h2> <!-- nagłówek drugiego poziomu, bo h1 jest używany-->
+        <p class="about-content">Front-end developer i project manager. Odpowiadał za realizację wielu projektów webowych dla klientów w Polski i zagranicy. Występował jako prelegent na spotkaniach WordUp, gdzie opowiadał o możliwościach systemu WordPress CMS przy tworzeniu stron internetowych.</p>
+      <!--  <br />  to niepotrzebne jako że mamy dwa paragrafy,a paragrafy to blokowe, i tak zajmą całaszerokosc naszej stronki,
+       jakbysmy mieli element liniowy np <a> to trzeba dac znak nowej linii, zeby bylo nizej-->
+        <p class="about-content"> Uważa, że każdy może zostać programistą, dlatego prowadzi warsztaty na uczelniach wyższych oraz w ramach projektu Codevenig, na których pokazuje jak funkcjonują współczesne strony internetowe.</p>
+    </section>
+
+
+    <footer id="contact">
+        <h2 id="contact-header">Kontakt</h2>
+        <address id="contact-content">
+            Łukasz Badocha<br /> ul. Mostowa 6/13<br /> 31-061 Kraków<br />
+            <a href="mailto:l.badocha@arena108.pl">l.badocha@arena108.pl</a>
+        </address>
+    </footer>
+
+</body>
+
+</html>

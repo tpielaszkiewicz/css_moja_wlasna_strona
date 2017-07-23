@@ -1,0 +1,94 @@
+body {
+/*    Czcionka dla body - jeżeli nie znajdzie lata to zastąpi ją sans serifem */
+    font-family: 'Lato', sans-serif;
+    margin: 0px;   
+}
+
+
+/* dla kazdej z sekcji tekst wysrodkujemy*/
+h1,
+h2,
+h3,
+p,
+address,
+nav{
+    text-align: center;
+}
+
+#menu {
+/*kolor tła dla całego menu*/
+    background-color: black;
+}
+
+#menu ul {
+/*    padding zeero usunie nam wciecie + brak marginesów dla ul (opinajacych liste) */
+    margin: 0px;
+    padding: 0;
+}
+
+.menu-item {
+/*    inline block zmieni nam elementy zajmujace pełna linie na liniowe - następujace po sobie */
+    display: inline-block;
+    color: white;
+/*    żeby nie było zbite wszystko */
+    margin: 20px;
+}
+/*na podswietlenie jak najedziemy*/
+a:hover{
+    color: gray;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+/*    pozycja relative, bo będziemy chcieli zeby nagłówek h1 nam się nałożył na fotę*/
+    position: relative;
+}
+
+header img {
+/*    100% szerokosci body, zeby nam nie wychodziło poza ekran*/
+    width: 100%;
+}
+
+header h1 {
+/*    dzięki pozycji absoulte, miejsce 'pierwotnie' zajmowane przez h1 zniknie (nie zostanie nam puste pole)*/
+    position: absolute;
+/*    background-color: aqua; check - bez background coloru tło przezroczyste*/
+    text-transform: uppercase;
+    font-size: 42px;
+    top: 50%;
+    width: 100%;
+    color: white;
+}
+
+.about-content{
+/*    robimy wcięcia do sekcji o mnie*/
+/*
+    padding-left: 40px;
+    padding-right: 40px;
+*/
+}
+#about {
+    padding: 30px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+footer {
+    background-color: black;
+    color: white;    
+}
+
+footer address{
+    margin: 10px;
+    line-height: 20px;
+}
+
+footer a {
+    color: white;
+}
